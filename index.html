@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倫敦是隻無齒貓</title>
+    <style>
+       html{
+        scroll-behavior:smooth;
+        /* 讓網頁滑輪拉的順利 */
+        }
+
+       body{
+        margin:0px;
+        background-color: aliceblue;
+        padding-top: 60px;
+        /* 會受到透明度影響而顯現出來 */
+       }
+       p{
+        margin: 0px;
+       }
+       /* 圖片區塊設定 */
+       #block01{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-color: cadetblue;
+       }
+       #img01{
+        width: 100%;
+        height: 100%;
+        background-color: gray;
+        position: relative;
+        background-image: url('/IMG/DSC_9705.JPG');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity:0.6; 
+        /* 透明度0是完全透明 1完全不透明 */
+       }
+
+       #block02{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: fuchsia;
+       }
+
+       #img02{
+        width: 100%;
+        height: 40vh;
+        background-color: grey;
+        position: relative;
+        background-image: url('/IMG/DIN_3957.JPG');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       }
+
+       #block03{
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        
+       }
+
+       #img03{
+        width: 100%;
+        height: 100%;
+        background-color: lightblue;
+        position: relative;
+        background-image: url('/IMG/DSC_9855.JPG');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       }
+
+       #block04{
+        width: 100%;
+        height: 40vh;
+        position: relative;
+       }
+
+       #img04{
+        width: 100%;
+        height: 100vh;
+        background-color: bisque;
+        position: relative;
+        background-image: url('/IMG/DIN_4389.JPG');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       }
+
+        /* 文字區塊設定 */
+        #text01{
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(255, 254, 224);
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 100;
+        color: gray;
+        letter-spacing: 0;
+        padding: 50px 100px ;
+        /* 自動扣除padding以及border */
+        box-sizing: border-box;
+        
+       }
+
+       #text02{
+        width: 100%;
+        height: 20vh;
+        background-color:rgb(255, 254, 224);
+        font-size: 20px;
+        text-align:left ;
+        line-height: 30px;
+        font-weight: lighter;
+        color: white;
+       }
+
+       #text03{
+        width: 100%;
+        height: 20vh;
+        background-color: rgb(255, 254, 224);
+        font-size: 20px;
+        text-align: left;
+        line-height: 30px;
+        font-weight: lighter;
+        color: white;
+
+       }
+
+       /* 圖片標題設定 */
+       #title01{
+        width: 400px;
+        height: 60px;
+        background-color: darkgray;
+        position: absolute;
+        top:calc(50% - 30px);
+        left:calc(50% - 175px);
+        font-size: 30px;
+        text-align: center;
+        line-height: 60px;
+        font-weight:normal;
+        color: white;
+        letter-spacing: 10px;
+       }
+
+       #title02{
+        width: 350px;
+        height: 60px;
+        background-color: transparent;
+        position:absolute;
+        top:calc(50% - 30px);
+        left:calc(50% - 175px);
+        font-size: 32px;
+        text-align: center;
+        line-height: 50px;
+        font-weight:normal;
+        color: white;
+        letter-spacing: 10px;
+       }
+      
+
+       #nav{
+        width: 100%;
+        height: 60px;
+        background-color: beige;
+        line-height: 60px;
+        padding: 0px 100px;
+        box-sizing: border-box;
+        font-size: 18px;
+        font-weight: bold;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        opacity:0.6; 
+       }
+
+       #link01{
+        margin-right: 40px;
+       }
+
+       #link02{
+        margin-right: 40px;
+       }
+
+       #link03{
+        margin-right: 40px;
+       }
+
+       #anchor01{
+        position: absolute;
+        top:-60px;
+       }
+
+       #anchor02{
+        position: absolute;
+        top:-60px;
+       }
+
+       #anchor03{
+        position: absolute;
+        top:-60px;
+       }
+
+       #anchor04{
+        position: absolute;
+        top:-60px;
+       }
+
+    </style>
+    
+</head>
+<body>
+    <!-- <div id="wrap"> -->
+    <div id="nav">
+        <a href="#anchor01" id="link01"> 01</a>
+        <a href="#anchor02" id="link02"> 02</a>
+        <a href="#anchor03" id="link03"> 03 </a>
+        <a href="#anchor04" id="link04"> 04 </a>
+    </div>
+    <div id="block01">
+        <div id="anchor01"></div>
+        <div id="img01"></div>
+            <div id="title01">Comedian_london</div>
+        </div>
+    </div>
+    <div id="text01">
+        <div id="textTitle"></div>
+        <p id="content01"></p>
+    </div>
+
+
+    <div id="block02">
+        <div id="img02"></div>
+            <div id="anchor02"></div>
+            <div id="title02"></div>
+    </div>
+
+    <div id="text02">
+        <p id="content02"></p>
+    </div>
+
+    <div id="block03">
+        <div id="img03"></div>
+            <div id="anchor03"></div>
+    </div>
+
+
+    <div id="text03">
+        <p id="content03"></p>
+    </div>
+
+    <div id="block04">
+    <div id="img04"></div>
+        <div id="anchor04"></div>
+    </div>
+
+    <!-- </div> -->
+    <!-- <div id="img01"></div>
+    <div id="cover"></div>
+    <div id="contain"></div> -->
+    
+</body>
+</html>
